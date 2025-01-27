@@ -1,0 +1,26 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>@welcomeMessage</h1>
+
+Welcome to your new app.
+
+<br />
+
+<button class="btn btn-primary" @onclick="greeting">Click Me</button>
+
+<CustomButton />
+
+@*simple comment in blazor*@
+@*<SurveyPrompt />*@
+
+@* code block, that holds C# codes *@
+@code {
+    private string welcomeMessage = "";
+
+    private void greeting()
+    {
+        welcomeMessage = "Hello, Ahmed!";
+    }
+}
